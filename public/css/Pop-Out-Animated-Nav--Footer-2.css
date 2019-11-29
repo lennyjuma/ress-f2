@@ -1,0 +1,69 @@
+#sidebar-nav ul li a {
+  color: white;
+  font-size: 12pt;
+  font-weight: 900;
+}
+
+#sidebar-nav ul li a:hover {
+  color: #0ced88!important;
+}
+
+#sidebar-nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#sidebar-nav ul li {
+  list-style: none;
+  padding: 7px 5px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(11,98,58,0.43);
+  border-bottom-width: 1px;
+}
+
+#sidebar-nav ul li:first-child {
+  padding-top: 10px;
+}
+
+.copy {
+  font-size: 6pt;
+}
+
+.here {
+  color: #0ced88!important;
+}
+
+.contact-info {
+  font-weight: 900;
+  padding: 5px;
+  color: #0ced88;
+  font-size: 18pt;
+}
+
+#kjrb-logo {
+  height: 64px;
+}
+
+nav {
+  position: fixed;
+  z-index: 100000;
+}
+
+.icons {
+  margin-left: 15px;
+}
+
+.social {
+  color: white;
+  margin-top: 20px;
+}
+
+.social a:hover {
+  color: #14e688;
+}
+
+.social a {
+  font-size: 15pt;
+  letter-spacing: 15px;
+}
+

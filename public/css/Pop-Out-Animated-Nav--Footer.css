@@ -1,0 +1,137 @@
+a {
+  color: white;
+}
+
+#nav-toggle {
+  font-size: 20pt;
+  position: fixed;
+  margin: 30px;
+  height: 56px;
+  width: 56px;
+  text-align: center;
+  line-height: 57px;
+  top: 0;
+  right: -35px;
+  transition: all 350ms linear;
+  -webkit-transition: all 350ms linear;
+  -ms-transition: all 350ms linear;
+  -moz-transition: all 350ms linear;
+  -o-transition: all 400ms linear;
+  color: #0f9e5e;
+  z-index: 99999999;
+  background: #0a4028;
+  /*transform: rotateZ(90deg);*/
+  /*-webkit-transform: rotateZ(90deg);*/
+  /*-moz-transform: rotateZ(90deg);*/
+  /*-o-transform: rotateZ(90deg);*/
+  /*-ms-transform: rotateZ(90deg);*/
+}
+
+#nav-toggle.active {
+  right: 23.5vh !important;
+  transform: scale(1.170);
+  -moz-transform: scale(1.170);
+  -webkit-transform: scale(1.170);
+  -o-transform: scale(1.170);
+  -ms-transform: scale(1.170);
+  color: #0ced88!important;
+  background: #084127;
+}
+
+#nav-toggle:hover {
+  color: #0ced88!important;
+}
+
+#sidebar-nav ul li a {
+  color: white;
+  font-size: 12pt;
+  font-weight: 900;
+}
+
+#sidebar-nav ul li a:hover {
+  color: #0ced88!important;
+}
+
+#sidebar-nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#sidebar-nav ul li {
+  list-style: none;
+  padding: 7px 5px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(11,98,58,0.43);
+  border-bottom-width: 1px;
+}
+
+#sidebar-nav ul li:first-child {
+  padding-top: 10px;
+}
+
+.copy {
+  font-size: 6pt;
+}
+
+.here {
+  color: #0ced88!important;
+}
+
+.contact-info {
+  font-weight: 900;
+  padding: 5px;
+  color: #0ced88;
+  font-size: 18pt;
+}
+
+nav {
+  position: fixed;
+  z-index: 100000;
+}
+
+.icons {
+  margin-left: 15px;
+}
+
+.social {
+  color: white;
+  margin-top: 20px;
+}
+
+.social a:hover {
+  color: #14e688;
+}
+
+.social a {
+  font-size: 15pt;
+  letter-spacing: 15px;
+}
+
+#sidebar-nav {
+  position: fixed;
+  background: rgb(8,65,39);
+  height: auto;
+  right: -32vh;
+  width: 31vh;
+  transition: all 350ms linear;
+  z-index: 100000;
+  top: 10px;
+}
+
+@media (max-width:767px) {
+  #sidebar-nav {
+    position: fixed;
+    background: rgb(8,65,39);
+    height: auto;
+    right: -32vh;
+    width: 29vh;
+    transition: all 350ms linear;
+    z-index: 100000;
+    top: 10px;
+  }
+}
+
+.active {
+  right: 0 !important;
+}
+
