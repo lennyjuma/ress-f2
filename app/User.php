@@ -60,6 +60,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Article::class);
     }
+    public function contact()
+    {
+        return $this->hasMany(Contact::class);
+    }
     public function ress()
     {
         return $this->hasMany(ress::class);

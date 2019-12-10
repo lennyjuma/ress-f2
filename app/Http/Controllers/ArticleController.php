@@ -18,11 +18,11 @@ class ArticleController extends Controller
     public function index()
     {
 //        $role = Role::create(['name'=>'Admin']);
-////        $permission = Permission::create(['name'=>'crud']);
-////        $permission->assignRole($role);
+//        $permission = Permission::create(['name'=>'crud']);
+//        $permission->assignRole($role);
 //        auth()->user()->assignRole('Admin');
         $article_number = DB::table('articles')->count();
-        $article = DB::table('articles')->get();
+        $article = DB::table('articles')->paginate(5);
         return view('article.index', compact('article', 'article_number'));
     }
 
@@ -63,8 +63,7 @@ class ArticleController extends Controller
         ]);
         $article->update($request->all());
 
-        return redirect()->route('article.index')
-            ;
+        return redirect()->route('article.index');
 
     }
 }

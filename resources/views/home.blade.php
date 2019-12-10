@@ -2,59 +2,35 @@
 
 @section('content')
 
-<div id="home" class="content-section text-center" style="padding-top: 0px;">
+<div>
     <div class="parallax">
-        <div class="container d-flex justify-content-center align-items-center parallax-content">
+        <div class="container d-flex justify-content-center align-items-center parallax-content" style="height: 75vh;">
             <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-column">
-                <h1 data-aos="zoom-in-up"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000" >Renewable Energy And Environmental <br>  Sustainable Solutions</h1>
+                <h1 style="font-size: 30px;"><br>RENEWABLE ENERGY AND ENVIRONMENTAL<br>SUSTAINABLE SOLUTIONS<br><br></h1>
             </div>
-        </div>
-                <video class="parallax-background" autoplay="" loop="" muted=""><source src="vid/wt.mp4" type="video/mp4"
-                              wp-acf="[{'type':'url','name':'video','label':'Video','wrapper':{'width':25}},{'type':'text','name':'video_css','label':'Video CSS (eg. filters)','wrapper':{'width':25}}]"
-                            wp-attr="[{'target':'src','replace':'%1'},{'target':'parent_style','replace':'%2'}]"></video>
+        </div><video class="parallax-background" autoplay="" loop="" muted=""><source src="vid/wt.mp4" type="video/mp4" wp-acf="[{'type':'url','name':'video','label':'Video','wrapper':{'width':25}},{'type':'text','name':'video_css','label':'Video CSS (eg. filters)','wrapper':{'width':25}}]" wp-attr="[{'target':'src','replace':'%1'},{'target':'parent_style','replace':'%2'}]"></video>
         <div
             class="parallax-placeholder" style="background-image:url(&quot;assets/img/placeholder.jpg&quot;);"></div>
     </div>
-    <div class="container">
-        <div class="row" id="about">
-            <div class="col-lg-8 mx-auto">
-                <h2>About RESS</h2>
-                <p>Grayscale is a free Bootstrap theme. It can be yours right now, simply download the template on&nbsp;<a href="#">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by&nbsp;<a href="#">Gratisography</a>&nbsp;along with a custom Google Maps skin courtesy of&nbsp;<a href="#">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+    <div class="row" style="margin-top;15px;">
+        <div class="col-12 col-lg-8 text-left d-flex flex-column m-auto">
+            <a data-toggle="tooltip" data-bs-tooltip="" href="#" style="color: rgb(0,0,0);" title="Click To Read The Article">
+                <h2 class="text-uppercase text-center" data-toggle="tooltip" data-bs-tooltip="" title="Click To Read More" style="font-size: 28px;"><span style="text-decoration: underline;">knowledge bites</span></h2>
+            </a>
+            <p class="text-center" style=" margin-top;-25px; color: rgb(0,0,0);font-size: 20px;"><br>To be a world class Renewable Energy Company of choice offering the illusive Energy trillema (energy security, energy equity and environmental sustainability) trade-off balance for growth and macroeconomic stability, equity and poverty
+                reduction and improving governance.<br><br></p><a class="text-right align-self-center flex-wrap" data-toggle="tooltip" data-bs-tooltip="" href="#" title="Read Everything About this Article"></a></div>
+    </div>
+    <div class="parallax">
+        <div class="container d-flex justify-content-center align-items-center parallax-content" style="height:80vh;">
+            <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-column">
+                <h1 style="font-size: 36px;"><br>RENEWABLE ENERGY AND ENVIRONMENTAL<br>SUSTAINABLE SOLUTIONS<br><br></h1>
             </div>
-        </div>
+        </div><video class="parallax-background" autoplay="" loop="" muted=""><source src="vid/tt.mp4" type="video/mp4" wp-acf="[{'type':'url','name':'video','label':'Video','wrapper':{'width':25}},{'type':'text','name':'video_css','label':'Video CSS (eg. filters)','wrapper':{'width':25}}]" wp-attr="[{'target':'src','replace':'%1'},{'target':'parent_style','replace':'%2'}]"></video>
+        <div
+            class="parallax-placeholder" style="background-image:url(&quot;assets/img/placeholder1.jpg&quot;);"></div>
     </div>
-</div>
-<div class="parallax">
-    <div class="container d-flex justify-content-center align-items-center parallax-content">
-        <div class="col-12 col-md-10 col-lg-8 d-flex justify-content-center flex-column">
-            <h1 data-aos="zoom-in-up"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000">Renewable Energy And Environmental <br>  Sustainable Solutions</h1>
-        </div>
-    </div>
-    <video class="parallax-background" autoplay="" loop="" muted=""><source src="vid/tt.mp4" type="video/mp4"
-                                                                            wp-acf="[{'type':'url','name':'video','label':'Video','wrapper':{'width':25}},{'type':'text','name':'video_css','label':'Video CSS (eg. filters)','wrapper':{'width':25}}]"
-                                                                            wp-attr="[{'target':'src','replace':'%1'},{'target':'parent_style','replace':'%2'}]"></video>
-    <div
-        class="parallax-placeholder" style="background-image:url(&quot;assets/img/placeholder.jpg&quot;);"></div>
-</div>
-
-<div>
-    <div id="dot-nav" class="affix" data-spy="affix">
-        <ul class="list-group">
-            <li class="list-group-item awesome-tooltip active" title="Home"><a href="#home"> </a></li>
-            <li class="list-group-item awesome-tooltip" title="Knowledge Bites"><a href="#bits"> </a></li>
-            <li class="list-group-item awesome-tooltip" title="Contact"><a href="#contact"> </a></li>
-        </ul>
-    </div>
-    <div id="main"></div>
-</div>
 
 </div>
 
-</html>
+
 @endsection

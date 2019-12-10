@@ -20,4 +20,3 @@ $(function () {
 
     CKEDITOR.replace('editor3', {extraPlugins: 'devtools'});
 });
-

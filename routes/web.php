@@ -17,10 +17,9 @@ Route::get('/', function (\App\About $about) {
 //    $about_number = DB::table('abouts')->count();
 //    $about = DB::table('abouts')->get();
     return view('home');
-});Route::get('/contact', function (\App\About $about) {
-//    $about_number = DB::table('abouts')->count();
-//    $about = DB::table('abouts')->get();
-    return view('contacts');
+});
+Route::get('/admin', function () {
+    return view('admn');
 });
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
@@ -62,6 +61,7 @@ Route::resource('service', 'ServiceController');
 Route::resource('about', 'AboutController');
 Route::resource('members', 'MembersController');
 Route::resource('article', 'ArticleController');
+Route::resource('contact', 'ContactsController');
 
 
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRessesTable extends Migration
+class CreateContactTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreateRessesTable extends Migration
      */
     public function up()
     {
-        Schema::create('resses', function (Blueprint $table) {
+        Schema::create('contact', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
-            $table->string('title');
-            $table->string('duration');
-            $table->longText('duties');
-            $table->longText('description');
-            $table->longText('achievements');
+            $table->text('title');
+            $table->text('phone');
+            $table->text('email');
+            $table->text('description');
             $table->timestamps();
 
             $table->index('user_id');
@@ -34,6 +33,6 @@ class CreateRessesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('resses');
+        Schema::dropIfExists('contacts');
     }
 }

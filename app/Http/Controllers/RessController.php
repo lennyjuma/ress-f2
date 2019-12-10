@@ -17,6 +17,7 @@ class RessController extends Controller
 //        $reference_number = DB::table('reference')->count();
         $ress = collect(DB::table('resses')->get());
 //        $half = $reference_number/2; // half of the total count
+//        $ress = Ress::get();
 //        $reference1 = array_slice($reference, 0, $half);      // returns first half
 //        $reference2 = array_slice($reference, $half);  // returns second half
 //        //THIS RETURNS CHUNKS FROM THE CONRTROLLER USE DD TO SEE
@@ -38,7 +39,7 @@ class RessController extends Controller
     {
         $data = request()->validate([
             'title' =>' required',
-            'duration' =>'',
+            'duration' =>'required',
             'duties' => ['required','max:9500'],
             'description' => ['required','max:9500'],
             'achievements' => ['required','max:9500'],
@@ -63,6 +64,7 @@ class RessController extends Controller
     {
         $request->validate([
             'title' =>' required',
+            'duration' =>' required',
             'duties' => ['required','max:9500'],
             'description' => ['required','max:9500'],
             'achievements' => ['required','max:9500'],

@@ -7,7 +7,7 @@
                 <div class="container">
                     <div class="row d-flex">
                         <div class="col text-left" style="margin-left: -25px;">
-                            <h2 class="text-uppercase section-heading" style="background-image: url(&quot;none&quot;);background-repeat: no-repeat;background-position: top;background-size: cover;margin-left: 24px;padding-left: 6px;font-size: 38px;">add about us</h2>
+                            <h2 class="text-uppercase section-heading" style="background-image: url(&quot;none&quot;);background-repeat: no-repeat;background-position: top;background-size: cover;margin-left: 24px;padding-left: 6px;font-size: 38px;">edit work reference</h2>
                         </div>
                     </div>
                 </div>
@@ -15,47 +15,38 @@
         </section>
         <div class="container">
             <div>
-                <form method="POST"  enctype="multipart/form-data" action="/about">
-                    @csrf
+                <form>
                     <div class="form-group">
                         <div id="formdiv">
                             <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                                 <div class="col-md-8 offset-md-1">
                                     <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Title</strong></p>
                                 </div>
-                                <div class="col-md-10 offset-md-1">
-                                    <input type="text"
-                                           class="form-control"
-                                           style="margin-left:0px;font-family:Roboto, sans-serif;"
-                                           name="title"
-                                           placeholder="Title" />
-                                    @error('title')
-                                    <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                                </span>
-                                    @enderror
+                                <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" name="name" placeholder="Name"></div>
+                            </div>
+                            <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                <div class="col-md-8 offset-md-1">
+                                    <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Duration</strong></p>
                                 </div>
+                                <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" name="name" placeholder="Name"></div>
                             </div>
                             <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                                 <div class="col-md-8 offset-md-1">
                                     <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Description</strong></p>
                                 </div>
-                                <div class="col-md-10 offset-md-1">
-                                    <textarea
-                                        name="description"
-                                        autocomplete="description"
-                                        class="form-control @error('description') is-invalid @enderror"--}}
-                                        value="{{ old('description') }}"
-                                        style="width: 100%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"
-                                        id="editor2">
-
-                                </textarea>
-                                    @error('description')
-                                    <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                                </span>
-                                    @enderror
+                                <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" name="name" placeholder="Name"></div>
+                            </div>
+                            <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                <div class="col-md-8 offset-md-1">
+                                    <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Duties</strong></p>
                                 </div>
+                                <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" name="name" placeholder="Name"></div>
+                            </div>
+                            <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
+                                <div class="col-md-8 offset-md-1">
+                                    <p style="margin-left:2%;font-family:Roboto, sans-serif;font-size:24px;"><strong>Achievements</strong></p>
+                                </div>
+                                <div class="col-md-10 offset-md-1"><input class="form-control" type="text" style="margin-left:0px;font-family:Roboto, sans-serif;" name="name" placeholder="Name"></div>
                             </div>
                             <div class="form-row" style="margin-right:0px;margin-left:0px;padding-top:24px;">
                                 <div class="col-12 col-md-4 offset-md-4"><button class="btn btn-light btn-lg" style="font-family:Roboto, sans-serif;" type="reset">Clear </button><button class="btn btn-light btn-lg" style="margin-left:16px;" type="submit">Submit </button></div>
@@ -66,8 +57,4 @@
             </div>
         </div>
     </div>
-
-
-
-
-@endsection
+@stop

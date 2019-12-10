@@ -18,9 +18,9 @@ class ServiceController extends Controller
 
     public function index()
     {
-        $service_number = DB::table('services')->count();
+//        $service_number = DB::table('services')->count();
         $service = DB::table('services')->get();
-        return view('service.index', compact('service', 'service_number'));
+        return view('service.index', compact('service'));
     }
 
     public function create()
