@@ -13,8 +13,9 @@
         </section>
         <div class="container">
             <div class="row">
-                @foreach($ress as $art)
+
                 <div class="col-12 col-lg-8 mx-auto">
+                    @foreach($ress as $art)
                     <a data-toggle="tooltip" data-bs-tooltip="" href="/cv/{{$art->id}}" style="color: rgb(0,0,0);" title="Click To Read The Work Reference">
                         <h2 class="text-uppercase"  style="font-size: 28px;"><span style="text-decoration: underline;">{{$art->title}}</span></h2>
                     </a>
@@ -24,8 +25,9 @@
                     <p style="color: rgb(0,0,0);font-size: 20px;margin-bottom: 2px;margin-top: -31px;">{!! str_limit($art->duties, 650) !!}</p>
                     <h2 class="text-uppercase"  style="font-size: 25px;"><span style="text-decoration: underline;">achievements</span></h2>
                     <p style="color: rgb(0,0,0);font-size: 20px;">{!! str_limit($art->achievements, 650) !!}</p><a class="flex-wrap"  href="/cv/{{$art->id}}" ><img class="align-self-center" data-toggle="tooltip" data-bs-tooltip="" title="Read More About This work reference" src="assets/img/bitt.png" style="width: 154px;color: rgb(3,3,3);" ></a>
-                </div>
                     @endforeach
+                </div>
+
             </div>
         </div>
 {{--        <div class="row">--}}

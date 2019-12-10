@@ -14,14 +14,17 @@
         </section>
         <div class="container">
             <div class="row">
-                @foreach($about as $art)
+
                 <div class="col-12 col-lg-8 mx-auto">
+                    @foreach($about as $art)
                     <a data-toggle="tooltip" data-bs-tooltip="" href="#" style="color: rgb(0,0,0);" title="Click To Read The Article">
                         <h2 class="text-uppercase" data-toggle="tooltip" data-bs-tooltip="" title="Click To Read More" style="height: 28px;"><span style="text-decoration: underline;">{{$art->title}}</span></h2>
                     </a>
                     <p style="color: rgb(0,0,0);font-size: 20px;">{!! $art->description !!}</p><a class="flex-wrap"
-                        data-toggle="tooltip" data-bs-tooltip="" href="#" title="Read Everything About this Article"></a></div>
+                        data-toggle="tooltip" data-bs-tooltip="" href="#" title="Read Everything About this Article"></a>
                     @endforeach
+                </div>
+
             </div>
         </div>
     </section>

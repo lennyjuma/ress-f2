@@ -13,14 +13,16 @@
         </section>
         <div class="container">
             <div class="row">
-                @foreach($members as $art)
+
                 <div class="col-12 col-lg-8 mx-auto">
+                    @foreach($members as $art)
 
                         <h2 class="text-uppercase" title="Click To Read More"><span style="text-decoration: underline;">{{$art->name}}</span></h2>
 
                     <p style="color: rgb(0,0,0);font-size: 20px;">{!! $art->description !!}.</p>
-                    </div>
                     @endforeach
+                    </div>
+
             </div>
         </div>
     </section>

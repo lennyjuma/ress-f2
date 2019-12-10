@@ -13,14 +13,16 @@
         </section>
         <div class="container">
             <div class="row">
-                @foreach($service as $art)
+
                 <div class="col-12 col-lg-8 mx-auto">
+                    @foreach($service as $art)
                     <a data-toggle="tooltip" data-bs-tooltip="" href="#" style="color: rgb(0,0,0);" title="Click To Read The Article">
                         <h2 class="text-uppercase" title="Click To Read More"><span style="text-decoration: underline;">{{$art->title}}</span></h2>
                     </a>
                     <p style="color: rgb(0,0,0);font-size: 20px;">{!! $art->description !!}</p>
-                    </div>
                     @endforeach
+                </div>
+
             </div>
         </div>
     </section>
