@@ -10,8 +10,8 @@ class ContactsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->only('edit','store','create','update','delete');
-        $this->middleware('role:Admin')->only('edit','store','create','update','delete','show');
+       // $this->middleware('auth')->only('edit','update','delete');
+        $this->middleware('role:Admin')->only('edit','update','delete','show');
     }
 
     public function create()
